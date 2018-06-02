@@ -47,6 +47,9 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/font-awesome/css/font-awesome.min.css",
+              "./node_modules/primeng/resources/primeng.css",
+              "./node_modules/primeng/resources/themes/cupertino/theme.css",
               "src/styles.css"
             ],
             "scripts": []
