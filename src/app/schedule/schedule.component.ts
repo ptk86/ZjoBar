@@ -38,7 +38,7 @@ export class ScheduleComponent implements OnInit {
         ];
     }
 
-    onAddEvent(){
+    onAddEvent() {
       this.events.push(
         {
           'title': 'Long Event',

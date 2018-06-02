@@ -20,16 +20,10 @@ export class MenuComponent implements OnInit {
         expanded: true
       },
       {
-        label: 'Dostępność',
+        label: 'Wnioski',
         items: [
-          { label: 'Moja dostępność' }
-        ],
-        expanded: true
-      },
-      {
-        label: 'Urlopy',
-        items: [
-          { label: 'Wnioski urlopowe' }
+          { label: 'Urlop' },
+          { label: 'Zamiana' }
         ],
         expanded: true
       },

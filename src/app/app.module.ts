@@ -13,6 +13,7 @@ import { AppComponent } from './app.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { LayoutComponent } from './layout/layout.component';
 import { MenuComponent } from './menu/menu.component';
+import { VacationComponent } from './vacation/vacation.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { MenuComponent } from './menu/menu.component';
     ScheduleComponent,
     LayoutComponent,
     MenuComponent,
+    VacationComponent,
   ],
   imports: [
     BrowserModule,
