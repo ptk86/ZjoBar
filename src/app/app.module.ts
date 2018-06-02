@@ -6,6 +6,7 @@ import { MenuModule } from 'primeng/menu';
 import { MenubarModule } from 'primeng/menubar';
 import { ScheduleModule } from 'primeng/schedule';
 import { PanelMenuModule } from 'primeng/panelmenu';
+import { BreadcrumbModule } from 'primeng/breadcrumb';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -25,7 +26,8 @@ import { MenuComponent } from './menu/menu.component';
     BrowserAnimationsModule,
     AppRoutingModule,
     ScheduleModule,
-    PanelMenuModule
+    PanelMenuModule,
+    BreadcrumbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,9 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-schedule',
   template: `
-  <div style="width: 50%">
       <p-schedule [events]="events" [editable]="true" locale="pl"  (onDayClick)=onAddEvent() ></p-schedule>
-  </div>
   `,
   styles: []
 })
