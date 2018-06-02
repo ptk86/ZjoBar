@@ -10,11 +10,15 @@ import { PanelMenuModule } from 'primeng/panelmenu';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ScheduleComponent } from './schedule/schedule.component';
+import { LayoutComponent } from './layout/layout.component';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ScheduleComponent,
+    LayoutComponent,
+    MenuComponent,
   ],
   imports: [
     BrowserModule,
