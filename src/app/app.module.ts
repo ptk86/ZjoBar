@@ -7,6 +7,8 @@ import { MenubarModule } from 'primeng/menubar';
 import { ScheduleModule } from 'primeng/schedule';
 import { PanelMenuModule } from 'primeng/panelmenu';
 import { BreadcrumbModule } from 'primeng/breadcrumb';
+import { PanelModule } from 'primeng/panel';
+import { TableModule } from 'primeng/table';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -33,7 +35,9 @@ import { VacationListItemComponent } from './vacation/vacation-list-item.compone
     AppRoutingModule,
     ScheduleModule,
     PanelMenuModule,
-    BreadcrumbModule
+    BreadcrumbModule,
+    PanelModule,
+    TableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -22,7 +22,7 @@ export class MenuComponent implements OnInit {
       {
         label: 'Wnioski',
         items: [
-          { label: 'Urlopy' },
+          { label: 'Urlopy', routerLink: '/vacation' },
           { label: 'Zamiana' }
         ],
         expanded: true

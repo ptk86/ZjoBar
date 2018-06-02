@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-vacation-list-item',
   template: `
     <p>
-      vacation-list-item works!
+      Moje wnioski:
     </p>
   `,
   styles: []
@@ -15,5 +15,4 @@ export class VacationListItemComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }

@@ -3,9 +3,9 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-vacation',
   template: `
-    <p>
-      vacation works!
-    </p>
+
+      <app-vacation-list></app-vacation-list>
+
   `,
   styles: []
 })
