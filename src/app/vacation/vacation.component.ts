@@ -11,9 +11,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VacationComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
+  ngOnInit(): void {
   }
-
 }

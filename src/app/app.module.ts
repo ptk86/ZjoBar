@@ -14,6 +14,8 @@ import { ScheduleComponent } from './schedule/schedule.component';
 import { LayoutComponent } from './layout/layout.component';
 import { MenuComponent } from './menu/menu.component';
 import { VacationComponent } from './vacation/vacation.component';
+import { VacationListComponent } from './vacation/vacation-list.component';
+import { VacationListItemComponent } from './vacation/vacation-list-item.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { VacationComponent } from './vacation/vacation.component';
     LayoutComponent,
     MenuComponent,
     VacationComponent,
+    VacationListComponent,
+    VacationListItemComponent,
   ],
   imports: [
     BrowserModule,

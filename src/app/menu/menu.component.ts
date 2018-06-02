@@ -22,7 +22,7 @@ export class MenuComponent implements OnInit {
       {
         label: 'Wnioski',
         items: [
-          { label: 'Urlop' },
+          { label: 'Urlopy' },
           { label: 'Zamiana' }
         ],
         expanded: true
@@ -31,7 +31,7 @@ export class MenuComponent implements OnInit {
         label: 'Księgowość',
         items: [
           { label: 'Wypłaty' }
-        ], 
+        ],
         expanded: true
       }
     ];
