@@ -1,27 +1,27 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
 import { MenuModule } from 'primeng/menu';
 import { MenubarModule } from 'primeng/menubar';
 import { ScheduleModule } from 'primeng/schedule';
+import { PanelMenuModule } from 'primeng/panelmenu';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavBarComponent,
-    ScheduleComponent
+    ScheduleComponent,
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
-    MenuModule,
     ScheduleModule,
-    MenubarModule
+    PanelMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
