@@ -1,0 +1,106 @@
+<p-table [value]="vacationList">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Stan</th>
+            <th>Od</th>
+            <th>Do</th>
+            <th>Liczba dni</th>
+            <th>Na żądanie</th>
+            <th>Wiadmość</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-vacation>
+        <tr>
+            <td>{{vacation.state }}</td>
+            <td>{{vacation.from | date:'yyyy-MM-dd'}}</td>
+            <td>{{vacation.to | date:'yyyy-MM-dd'}}</td>
+            <td>{{vacation.days}}</td>
+            <td>{{vacation.isOnDemand}}</td>
+            <td>{{vacation.message}}</td>
+        </tr>
+    </ng-template>
+
+    <ng-template pTemplate="summary" let-rowData>
+        <div style="text-align:left">
+            <button type="button" pButton icon="fa-plus" (click)="showDialogToAdd()" label="Dodaj"></button>
+        </div>
+    </ng-template>
+</p-table>
+
+<p-dialog header="Szczegóły" [(visible)]="displayDialog" [responsive]="true" showEffect="fade" [modal]="true" [width]="500">
+    <div class="ui-g ui-fluid" *ngIf="tempItem">
+        <div class="ui-g-12">            
+                <div class="ui-g-4">
+                    <label for="from">Od</label>
+                </div>
+                <div class="ui-g-8">
+                        <p-calendar id="from" [minDate]="minDateValue" [(ngModel)]="tempItem.from"></p-calendar>
+                </div>            
+        </div>
+        <div class="ui-g-12">            
+                <div class="ui-g-4">
+                    <label for="to">Do</label>
+                </div>
+                <div class="ui-g-8">
+                    <p-calendar id="to" [minDate]="tempItem.from ? minDateValue : tempItem.from" [(ngModel)]="tempItem.to"></p-calendar>
+                </div>            
+        </div>
+        
+        <div class="ui-g-12">            
+                <div class="ui-g-4">
+                    <label for="isOnDemand">Do</label>
+                </div>
+                <div class="ui-g-8">
+                    <p-checkbox id="isOnDemand" [(ngModel)]="tempItem.isOnDemand" binary="true"></p-checkbox>
+                </div>            
+        </div>
+        
+        <div class="ui-g-12">
+                <div class="ui-g-4">
+                    <label for="message">Wiadomość</label>
+                </div>
+                <div class="ui-g-8">
+                    <input pInputText id="message" [(ngModel)]="tempItem.message" />
+                </div>
+        </div>
+        
+        <!-- <div class="ui-g-12">
+            <div class="ui-g-4">
+                <label for="vin">Vin</label>
+            </div>
+            <div class="ui-g-8">
+                <input pInputText id="vin" [(ngModel)]="car.vin" />
+            </div>
+        </div>
+        <div class="ui-g-12">
+            <div class="ui-g-4">
+                <label for="year">Year</label>
+            </div>
+            <div class="ui-g-8">
+                <input pInputText id="year" [(ngModel)]="car.year" />
+            </div>
+        </div>
+        <div class="ui-g-12">
+            <div class="ui-g-4">
+                <label for="brand">Brand</label>
+            </div>
+            <div class="ui-g-8">
+                <input pInputText id="brand" [(ngModel)]="car.brand" />
+            </div>
+        </div>
+        <div class="ui-g-12">
+            <div class="ui-g-4">
+                <label for="color">Color</label>
+            </div>
+            <div class="ui-g-8">
+                <input pInputText id="color" [(ngModel)]="car.color" />
+            </div>
+        </div> -->
+    </div>
+    <p-footer>
+        <div class="ui-dialog-buttonpane ui-helper-clearfix">
+            <button type="button" pButton icon="fa-close" (click)="delete()" label="Delete"></button>
+            <button type="button" pButton icon="fa-check" (click)="save()" label="Save"></button>
+        </div>
+    </p-footer>
+</p-dialog>

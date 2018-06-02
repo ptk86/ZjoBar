@@ -1,12 +1,12 @@
 import * as moment from 'moment';
 
 export class Vacation {
-    constructor(public userId: number,
-        public from: Date,
-        public to: Date,
-        public message: string,
-        public isOnDemand: boolean,
-        public state: RequestState
+    constructor(public userId?: number,
+        public from?: Date,
+        public to?: Date,
+        public message?: string,
+        public isOnDemand?: boolean,
+        public state?: RequestState
     ) {
     }
 
