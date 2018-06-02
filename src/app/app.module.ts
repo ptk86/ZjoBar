@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { MenuModule } from 'primeng/menu';
+import { MenubarModule } from 'primeng/menubar';
 import { ScheduleModule } from 'primeng/schedule';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -19,7 +20,8 @@ import { ScheduleComponent } from './schedule/schedule.component';
     BrowserModule,
     AppRoutingModule,
     MenuModule,
-    ScheduleModule
+    ScheduleModule,
+    MenubarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
