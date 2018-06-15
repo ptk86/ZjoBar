@@ -29,73 +29,40 @@
 
 <p-dialog header="Szczegóły" [(visible)]="displayDialog" [responsive]="true" showEffect="fade" [modal]="true" [width]="500">
     <div class="ui-g ui-fluid" *ngIf="tempItem">
-        <div class="ui-g-12">            
-                <div class="ui-g-4">
-                    <label for="from">Od</label>
-                </div>
-                <div class="ui-g-8">
-                        <p-calendar id="from" [minDate]="minDateValue" [(ngModel)]="tempItem.from"></p-calendar>
-                </div>            
-        </div>
-        <div class="ui-g-12">            
-                <div class="ui-g-4">
-                    <label for="to">Do</label>
-                </div>
-                <div class="ui-g-8">
-                    <p-calendar id="to" [minDate]="tempItem.from ? minDateValue : tempItem.from" [(ngModel)]="tempItem.to"></p-calendar>
-                </div>            
-        </div>
-        
-        <div class="ui-g-12">            
-                <div class="ui-g-4">
-                    <label for="isOnDemand">Do</label>
-                </div>
-                <div class="ui-g-8">
-                    <p-checkbox id="isOnDemand" [(ngModel)]="tempItem.isOnDemand" binary="true"></p-checkbox>
-                </div>            
-        </div>
-        
         <div class="ui-g-12">
-                <div class="ui-g-4">
-                    <label for="message">Wiadomość</label>
-                </div>
-                <div class="ui-g-8">
-                    <input pInputText id="message" [(ngModel)]="tempItem.message" />
-                </div>
-        </div>
-        
-        <!-- <div class="ui-g-12">
             <div class="ui-g-4">
-                <label for="vin">Vin</label>
+                <label for="from">Od</label>
             </div>
             <div class="ui-g-8">
-                <input pInputText id="vin" [(ngModel)]="car.vin" />
+                <p-calendar id="from" [minDate]="minDateValue" [(ngModel)]="tempItem.from"></p-calendar>
             </div>
         </div>
         <div class="ui-g-12">
             <div class="ui-g-4">
-                <label for="year">Year</label>
+                <label for="to">Do</label>
             </div>
             <div class="ui-g-8">
-                <input pInputText id="year" [(ngModel)]="car.year" />
+                <p-calendar id="to" [minDate]="tempItem.from ? minDateValue : tempItem.from" [(ngModel)]="tempItem.to"></p-calendar>
             </div>
         </div>
+
         <div class="ui-g-12">
             <div class="ui-g-4">
-                <label for="brand">Brand</label>
+                <label for="isOnDemand">Na żądanie?</label>
             </div>
             <div class="ui-g-8">
-                <input pInputText id="brand" [(ngModel)]="car.brand" />
+                <p-checkbox id="isOnDemand" [(ngModel)]="tempItem.isOnDemand" binary="true"></p-checkbox>
             </div>
         </div>
+
         <div class="ui-g-12">
             <div class="ui-g-4">
-                <label for="color">Color</label>
+                <label for="message">Wiadomość</label>
             </div>
             <div class="ui-g-8">
-                <input pInputText id="color" [(ngModel)]="car.color" />
+                <input pInputText id="message" [(ngModel)]="tempItem.message" />
             </div>
-        </div> -->
+        </div>
     </div>
     <p-footer>
         <div class="ui-dialog-buttonpane ui-helper-clearfix">
