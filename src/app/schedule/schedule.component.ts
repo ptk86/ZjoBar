@@ -1,23 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-schedule',
-  template: `
+    selector: 'app-schedule',
+    template: `
     <div class="ui-g-4">
       <p-schedule [events]="events" [header]="header" [editable]="true" locale="pl"></p-schedule>
     </div>
   `,
-  styles: []
+    styles: []
 })
 export class ScheduleComponent implements OnInit {
 
-  events: any[];
+    events: any[];
 
-  header = {
-    left: 'prev,next today',
-    center: 'title',
-    right: 'month,agendaWeek,agendaDay'
-  };
+    header = {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'month,agendaWeek,agendaDay'
+    };
 
     ngOnInit() {
         this.events = [
@@ -72,6 +72,4 @@ export class ScheduleComponent implements OnInit {
     //       'end': '2018-06-02'
     //     }
     //   );
-    }
-
 }
