@@ -47,7 +47,7 @@
               "src/styczen.pdf",
               "src/luty.pdf",
               "src/marzec.pdf",
-              "src/kwiecien.pdf",
+              "src/kwiecien.pdf"
             ],
             "styles": [
               "./node_modules/font-awesome/css/font-awesome.min.css",

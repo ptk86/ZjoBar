@@ -18,7 +18,7 @@ export class MenuComponent implements OnInit {
         label: 'Wnioski',
         items: [
           { label: 'Urlopy', routerLink: '/vacation' },
-          { label: 'Zamiana' }
+          { label: 'Zamiana', routerLink: '/worker-shift' }
         ]
       },
       { label: 'Wypłaty', routerLink: 'pay' }

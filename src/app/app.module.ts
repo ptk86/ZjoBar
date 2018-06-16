@@ -25,6 +25,7 @@ import { VacationComponent } from './vacation/vacation.component';
 import { VacationListComponent } from './vacation/vacation-list.component';
 import { VacationListItemComponent } from './vacation/vacation-list-item.component';
 import { PayComponent } from './pay/pay.component';
+import { WorkerShiftComponent } from './worker-shift/worker-shift.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { PayComponent } from './pay/pay.component';
     VacationListComponent,
     VacationListItemComponent,
     PayComponent,
+    WorkerShiftComponent,
   ],
   imports: [
     HttpClientModule,
