@@ -22,9 +22,9 @@ export class VacationListComponent {
     newItem: boolean;
 
     vacationList: Vacation[] = [
-        new Vacation(1, new Date('2018-06-01'), new Date('2018-06-02'), 'Wyjazd w góry', true, RequestState.Registered),
-        new Vacation(1, new Date('2018-06-03'), new Date('2018-06-04'), 'loerem ipsum pierdu pierdu', true, RequestState.Registered),
-        new Vacation(1, new Date('2018-06-03'), new Date('2018-06-04'), 'loerem ipsum pierdu pierdu', true, RequestState.Registered),
+        new Vacation(1, new Date('2018-06-01'), new Date('2018-06-02'), 'safafsafas', true, RequestState.Registered),
+        new Vacation(1, new Date('2018-06-03'), new Date('2018-06-04'), 'asfasfasfasf', true, RequestState.Registered),
+        new Vacation(1, new Date('2018-06-03'), new Date('2018-06-04'), 'cafgdsa adgadsg', true, RequestState.Registered),
 
     ];
 

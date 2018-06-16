@@ -14,7 +14,7 @@ import { DialogModule } from 'primeng/dialog';
 import { InputTextModule } from 'primeng/inputtext';
 import { CalendarModule } from 'primeng/calendar';
 import { CheckboxModule } from 'primeng/checkbox';
-
+import { DropdownModule } from 'primeng/dropdown';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -53,7 +53,8 @@ import { WorkerShiftComponent } from './worker-shift/worker-shift.component';
     DialogModule,
     InputTextModule,
     CalendarModule,
-    CheckboxModule
+    CheckboxModule,
+    DropdownModule
   ],
   providers: [],
   bootstrap: [AppComponent]
