@@ -3,24 +3,15 @@ import { MenuItem } from 'primeng/components/common/menuitem';
 
 @Component({
   selector: 'app-layout',
-  templateUrl: './layout.component.html',
+  template: `
+  <div class="ui-g">
+    <div class="ui-g-12">
+      <app-menu></app-menu>
+      <router-outlet></router-outlet>
+    </div>
+  </div>`,
   styles: []
 })
-export class LayoutComponent implements OnInit {
-
-  private items: MenuItem[];
-
-  ngOnInit() {
-    this.items = [
-      { label: 'Categories' },
-      { label: 'Sports' },
-      { label: 'Football' },
-      { label: 'Countries' },
-      { label: 'Spain' },
-      { label: 'F.C. Barcelona' },
-      { label: 'Squad' },
-      { label: 'Lionel Messi', url: 'https://en.wikipedia.org/wiki/Lionel_Messi' }
-    ];
-  }
+export class LayoutComponent {
 
 }

@@ -12,28 +12,16 @@ export class MenuComponent implements OnInit {
 
   ngOnInit() {
     this.items = [
-      {
-        label: 'Grafik',
-        items: [
-          { label: 'Grafik', routerLink: '/schedule' }
-        ],
-        expanded: true
-      },
+
+      { label: 'Grafik', routerLink: '/schedule' },
       {
         label: 'Wnioski',
         items: [
           { label: 'Urlopy', routerLink: '/vacation' },
           { label: 'Zamiana' }
-        ],
-        expanded: true
+        ]
       },
-      {
-        label: 'Księgowość',
-        items: [
-          { label: 'Wypłaty' }
-        ],
-        expanded: true
-      }
+      { label: 'Wypłaty', routerLink: 'pay' }
     ];
   }
 

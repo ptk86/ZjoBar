@@ -11,12 +11,12 @@
     </ng-template>
     <ng-template pTemplate="body" let-vacation>
         <tr>
-            <td>{{vacation.state }}</td>
-            <td>{{vacation.from | date:'yyyy-MM-dd'}}</td>
-            <td>{{vacation.to | date:'yyyy-MM-dd'}}</td>
-            <td>{{vacation.days}}</td>
-            <td>{{vacation.isOnDemand}}</td>
-            <td>{{vacation.message}}</td>
+            <td align="center">{{vacation.state }}</td>
+            <td align="center">{{vacation.from | date:'yyyy-MM-dd'}}</td>
+            <td align="center">{{vacation.to | date:'yyyy-MM-dd'}}</td>
+            <td align="center">{{vacation.days}}</td>
+            <td align="center">{{vacation.isOnDemand}}</td>
+            <td align="center">{{vacation.message}}</td>
         </tr>
     </ng-template>
 
@@ -66,8 +66,8 @@
     </div>
     <p-footer>
         <div class="ui-dialog-buttonpane ui-helper-clearfix">
-            <button type="button" pButton icon="fa-close" (click)="delete()" label="Delete"></button>
-            <button type="button" pButton icon="fa-check" (click)="save()" label="Save"></button>
+            <button type="button" pButton icon="fa-close" (click)="delete()" label="Usuń"></button>
+            <button type="button" pButton icon="fa-check" (click)="save()" label="Zapisz"></button>
         </div>
     </p-footer>
 </p-dialog>
