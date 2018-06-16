@@ -63,13 +63,4 @@ export class ScheduleComponent implements OnInit {
             }
         ];
     }
-
-    // onAddEvent() {
-    //   this.events.push(
-    //     {
-    //       'title': 'Long Event',
-    //       'start': '2018-05-28',
-    //       'end': '2018-06-02'
-    //     }
-    //   );
 }
